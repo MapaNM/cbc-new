@@ -37,10 +37,10 @@ export function createStudent (req, res){
 		.save()
 		.then(() => {
 			res.json({
-				message: "Student saved successfully",
+				message: "Logged successfully",
 			});
 		})
 		.catch(() => {
-			console.log("Failed to save student");
+			console.log("Failed to Logg");
 		});
 }
