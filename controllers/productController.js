@@ -38,7 +38,7 @@ export async function getProducts(req,res){
 }
 
 export async function deleteProducts(req,res){
-    if(  isAdmin(req)){
+    if(isAdmin(req)){
         res.status(403).json({ message: "Access denied by deleting, Admins Only." });
         return;
     }
