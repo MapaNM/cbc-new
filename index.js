@@ -4,6 +4,7 @@ import bodyParser from "body-parser"
 import studentRouter from "./routers/studentRouter.js"
 import userRouter from "./routers/userRouter.js"
 import jwt from "jsonwebtoken"
+import productRouter from "./routers/productRouter.js"
 
 const app = express()
 
@@ -52,6 +53,7 @@ mongoose.connect(connectionString).then(
 
 app.use("/students",studentRouter)
 app.use("/users", userRouter)
+app.use("/products", productRouter)
 
 
 
